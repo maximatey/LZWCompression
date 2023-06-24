@@ -19,3 +19,24 @@
 
 <h2>Your decoded text is:</h2>
 <p>{{outText}}</p>
+
+<h1>Run-length Encoding</h1>
+
+<h1>Compress your text!</h1>
+
+<h2>Input your text below:</h2>
+
+<form method="POST" action="compressrle">
+  {% csrf_token %}
+  <textarea name="compresstextrle"></textarea><br />
+  <input type="submit" />
+</form>
+
+<h1>Decode your compressed text!</h1>
+<h2>Input your compressed text below:</h2>
+
+<form method="POST" action="decoderle">
+  {% csrf_token %}
+  <textarea name="decodetextrle"></textarea><br />
+  <input type="submit" />
+</form>
